@@ -20,6 +20,8 @@ export default function Nowplaying() {
   };
 
   return (
+    <>
+    <p className="movieName">Now Playing</p>
     <div class="row">
       <div class="row__inner">
         {movies.map((movie) => {
@@ -30,9 +32,11 @@ export default function Nowplaying() {
               src={src}
               onFocus={bigger}
             />
+
           );
         })}
       </div>
     </div>
+    </>
   );
 }

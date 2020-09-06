@@ -1,0 +1,15 @@
+import React, { useState } from "react";
+import axios from "axios";
+// import fetch from "isomorphic-fetch";
+import classNames from "classnames";
+import "../styles/navber.scss";
+
+export default function Search(props) {
+
+  const search = (e) => {
+    console.log(e.target.value);
+    props.settext(e.target.value);
+  };
+
+  return <input type="text" placeholder="Search for..."　onKeyUp={search} />;
+}
