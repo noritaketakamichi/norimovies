@@ -6,8 +6,6 @@ export default function Nowplaying() {
 
   const [movies, setmovies] = useState([]);
 
-  //array of nowplaying movie
-  let movieData;
   let url =
     "https://api.themoviedb.org/3/movie/now_playing?api_key=222aa08dd47be356d45b65f113dd0c24&language=en-US";
   fetch(url)
