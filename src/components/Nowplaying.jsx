@@ -3,11 +3,14 @@ import axios from "axios";
 // import fetch from "isomorphic-fetch";
 import classNames from "classnames";
 import "../styles/movies.scss";
+import { useHistory } from 'react-router-dom';
 
-export default function Nowplaying() {
+export default function Nowplaying(props) {
   const [movies, setmovies] = useState([]);
 
   const [focus, setfocus] = useState(false);
+
+const history = useHistory();
 
   let url =
     "https://api.themoviedb.org/3/movie/now_playing?api_key=222aa08dd47be356d45b65f113dd0c24&language=en-US";
@@ -15,8 +18,11 @@ export default function Nowplaying() {
     setmovies(res.data.results);
   });
 
-  const bigger = () => {
-    setfocus(true);
+  const linkToInfo = (e) => {
+    
+    console.log(e)
+    history.push("/movie/1/")
+    // return <Redirect  to={"/movie/1/"} />
   };
 
   return (
@@ -30,7 +36,10 @@ export default function Nowplaying() {
             <img
               className={classNames("imageCell", { big: focus })}
               src={src}
-              onFocus={bigger}
+              onClick={e=>{
+                console.log(movie)
+                history.push(`/movie/${movie.id}/`)
+              }}
             />
 
           );
