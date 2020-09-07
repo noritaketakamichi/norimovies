@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Nowplaying from './Nowplaying';
-import Navber from './Navber';
-import Home from './Home';
+import Home from './Homebar';
 import Searchedmovie from './Searchedmovie.jsx';
 import axios from 'axios';
 import '../styles/styles.scss';
@@ -25,8 +24,7 @@ export default function App() {
 
 	return (
 		<>
-    <Home/>
-			<Navber  settext={settext} />
+    <Home　settext={settext} />
 			{searchedResult.length === 0 ? (
 				<div className="center">
 					<Nowplaying />

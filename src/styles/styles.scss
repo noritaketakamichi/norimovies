@@ -8,11 +8,15 @@
 }
 
 .home {
-    height: 2vw;
+    height: 7vw;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
 }
 
 .homelogo {
     font-family: 'Nova Flat';
     color: white;
-    font-size: 30px;
+    font-size: 25px;
+    vertical-align: middle;
 }

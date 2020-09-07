@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Nowplaying from './Nowplaying';
-import Navber from './Navber';
 import Searchedmovie from './Searchedmovie.jsx';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';

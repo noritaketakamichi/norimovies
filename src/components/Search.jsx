@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 // import fetch from "isomorphic-fetch";
 import classNames from "classnames";
-import "../styles/navber.scss";
+import "../styles/homebar.scss";
 
 export default function Search(props) {
 
