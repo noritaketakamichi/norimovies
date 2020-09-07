@@ -3,6 +3,7 @@
     "start": "react-scripts start"
   },
   "dependencies": {
+    "@u-wave/react-youtube": "^0.7.1",
     "axios": "^0.20.0",
     "isomorphic-fetch": "^2.2.1",
     "node-sass": "^4.14.1",

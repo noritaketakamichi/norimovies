@@ -5,7 +5,11 @@ import Searchedmovie from "./Searchedmovie.jsx";
 import axios from "axios";
 
 export default function App() {
+
+  //text in Navbar
   const [text, settext] = useState("");
+
+  //return of API
   const [searchedResult, setsearchedResult] = useState([]);
 
   useEffect(() => {
