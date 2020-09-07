@@ -11,5 +11,5 @@ export default function Search(props) {
     props.settext(e.target.value);
   };
 
-  return <input type="text" placeholder="Search for..."　onKeyUp={search} />;
+  return <input className="searchfield" type="text" placeholder="Search for..."　onKeyUp={search} />;
 }

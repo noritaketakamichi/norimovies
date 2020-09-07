@@ -15,7 +15,7 @@ export default function Searchedmovie(props) {
         return (
             // <div className="movieInfo">
           <img
-            className="imageCell"
+            className="searchedmovie"
             src={src}
                           onClick={e=>{
                 console.log(movie)
