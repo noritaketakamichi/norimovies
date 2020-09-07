@@ -1,6 +1,6 @@
 .imageCell {
     display: inline;
-    width: 200px;
+    width: 90%;
     margin: 10px;
     border-radius: 20px;
     border: 5px solid red;
@@ -28,21 +28,35 @@
     width: 500px;
 }
 
-.movieName{
-    color:white;
+.movieName {
+    color: white;
 }
 
-.movieInfo{
-    display: inline-block; 
-        width: 300px;
-        heigh: 400px;
-}
-
-.selectedMovieName{
-    color:white;
-    font-size:30px;
-}
-
-.selectedMovieImg{
+.movieInfo {
+    display: inline-block;
     width: 300px;
+    height: 400px;
+}
+
+.selectedMovieName {
+    color: white;
+    font-size: 30px;
+}
+
+.selectedMovieImg {
+    width: 300px;
+}
+
+.container {
+    padding: 40px;
+    background: #419be0;
+}
+
+div.test {
+    margin: 10px 40px;
+}
+
+.imageBox {
+    width: 15vw;
+    margin: 10px;
 }

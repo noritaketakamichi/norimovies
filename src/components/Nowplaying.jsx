@@ -17,8 +17,8 @@ export default function Nowplaying(props) {
 		dots: true,
 		infinite: true,
 		speed: 500,
-		slidesToShow: 1,
-		slidesToScroll: 1,
+    slidesToShow: 5,
+		slidesToScroll: 5,
 	};
 
   useEffect(() => {
@@ -30,13 +30,13 @@ export default function Nowplaying(props) {
 
 
 	return (
-		<>
+		<div　className="test">
 			<p className="movieName">Now Playing</p>
-			<div class="row">
-				<div class="row__inner">
+			<Slider  {...settings}>
 					{movies.map((movie) => {
 						let src = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
 						return (
+              <div className="imageBox">
 							<img
 								className={classNames('imageCell', { big: focus })}
 								src={src}
@@ -44,10 +44,11 @@ export default function Nowplaying(props) {
 									history.push(`/movie/${movie.id}/`);
 								}}
 							/>
+              </div>
 						);
 					})}
-				</div>
-			</div>
-		</>
+
+      </Slider>
+		</div>
 	);
 }
