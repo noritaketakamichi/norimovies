@@ -20,6 +20,7 @@ export default function App() {
 				setsearchedResult(res.data.results);
 			});
 		}
+		
 	}, [text]);
 
 	return (
