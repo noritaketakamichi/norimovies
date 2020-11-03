@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "react-scripts built",
+    "start": "react-scripts build",
     "hack": "react-scripts start"
   },
   "dependencies": {
