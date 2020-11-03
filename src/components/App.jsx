@@ -1,7 +1,38 @@
-import React from "react";
-import Nowplaying from "./Nowplaying";
+import React, { useEffect, useState } from 'react';
+import Nowplaying from './Nowplaying';
+import Home from './Homebar';
+import Searchedmovie from './Searchedmovie.jsx';
+import axios from 'axios';
+import '../styles/styles.scss';
 
+export default function App() {
+	//text in Navbar
+	const [text, settext] = useState('');
 
-export default function App(){
-    return<Nowplaying/>
+	//return of API
+	const [searchedResult, setsearchedResult] = useState([]);
+
+	useEffect(() => {
+		if (text !== '') {
+			let url = `https://api.themoviedb.org/3/search/movie?api_key=222aa08dd47be356d45b65f113dd0c24&language=en-US&query=${text}`;
+			axios.get(url).then((res) => {
+				console.log(res.data.results);
+				setsearchedResult(res.data.results);
+			});
+		}
+		
+	}, [text]);
+
+	return (
+		<>
+    <Home　settext={settext} />
+			{searchedResult.length === 0 ? (
+				<div className="center">
+					<Nowplaying />
+				</div>
+			) : (
+				<Searchedmovie text={text} searchedResult={searchedResult} />
+			)}
+		</>
+	);
 }

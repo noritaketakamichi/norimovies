@@ -1,0 +1,22 @@
+.background {
+    background-color: black;
+}
+
+.center {
+    text-align: center;
+    width: 100%;
+}
+
+.home {
+    height: 7vw;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+
+.homelogo {
+    font-family: 'Nova Flat';
+    color: white;
+    font-size: 25px;
+    vertical-align: middle;
+}

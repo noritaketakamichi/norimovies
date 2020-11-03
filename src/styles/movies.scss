@@ -1,6 +1,71 @@
 .imageCell {
     display: inline;
-    width: 100px;
+    width: 90%;
     margin: 10px;
+    border-radius: 20px;
+    border: 5px solid red;
     cursor: pointer;
+}
+
+.searchedmovie {
+    display: inline;
+    width: 17vw;
+    margin: 10px 1vw;
+    border-radius: 20px;
+    border: 5px solid red;
+    cursor: pointer;
+}
+
+// .big {
+//     width: 500px;
+// }
+.row {
+    overflow: scroll;
+    width: 100%;
+    // display: inline-block; 
+}
+
+.row__inner {
+    // transition: $duration transform;
+    font-size: 0;
+    white-space: nowrap;
+    // margin: ($tileHeight / 2) 0;
+    padding-bottom: 10px; // Account for OS X scroll bar
+}
+
+.row__inner:focus img {
+    width: 500px;
+}
+
+.movieName {
+    color: white;
+}
+
+.movieInfo {
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+}
+
+.selectedMovieName {
+    color: white;
+    font-size: 30px;
+}
+
+.selectedMovieImg {
+    width: 300px;
+}
+
+.container {
+    padding: 40px;
+    background: #419be0;
+}
+
+div.test {
+    margin: 10px 40px;
+}
+
+.imageBox {
+    width: 15vw;
+    margin: 10px;
 }
