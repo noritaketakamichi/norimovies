@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "start": "react-scripts start"
+    "start": "react-scripts built",
+    "hack": "react-scripts start"
   },
   "dependencies": {
     "@u-wave/react-youtube": "^0.7.1",
