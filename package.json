@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "start": "react-scripts build",
+    "start": "node server && yarn build",
+    "build": "react-scripts build",
     "hack": "react-scripts start"
   },
   "dependencies": {
